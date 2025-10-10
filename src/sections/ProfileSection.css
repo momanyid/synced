@@ -1,0 +1,15 @@
+.profile-section {
+  background-color: #001f3f;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.profile-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

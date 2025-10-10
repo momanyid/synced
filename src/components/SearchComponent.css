@@ -1,0 +1,28 @@
+.search-container {
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: yellow;
+  color: black;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  transform: translateY(-50%);
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
