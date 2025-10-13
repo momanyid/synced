@@ -9,7 +9,7 @@ interface Props {
 const MessageComponent:React.FC<Props> = ({message, time}) => {
 
   return (
-    <div>
+    <div className='message-body'>
         <p>{message}</p>
         <span>{time}</span> 
     </div>

@@ -1,19 +1,21 @@
 #root {
-  width: 100vw;
-  height: 100vh;
+ 
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .app-body {
+  width: 100vw;
+  height: 100vh;
   background-color: #3390ec;
   display: flex;
   
 }
 .profile-section {
   background-color: #002346;
+  width: 22rem;
 }
 
 .message-section {
