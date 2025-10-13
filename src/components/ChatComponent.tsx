@@ -2,16 +2,31 @@ import React from 'react'
 import './ChatComponent.css'
 
 interface Props {
+  id: number
   image: string
   profileName: string
   profileMessage: string
   time: string
   unread?: number
+  isSelected: boolean
+  onSelect: (id: number) => void
 }
 
-const ChatComponent: React.FC<Props> = ({ image, profileName, profileMessage, time, unread }) => {
+const ChatComponent: React.FC<Props> = ({ 
+  id, 
+  image, 
+  profileName, 
+  profileMessage, 
+  time, 
+  unread,
+  isSelected,
+  onSelect 
+}) => {
   return (
-    <div className="chat-item">
+    <div 
+      className={`chat-item ${isSelected ? 'active' : ''}`}
+      onClick={() => onSelect(id)}
+    >
       <div className="chat-left">
         <img src={image} alt={profileName} className="chat-avatar" />
         <div className="chat-text">

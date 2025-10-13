@@ -2,16 +2,18 @@ import React from 'react'
 import './MessageComponent.css'
 
 interface Props {
-    message: String,
-    time: String
+    message: string
+    time: string
+    sender: 'user' | 'other'
 }
 
-const MessageComponent:React.FC<Props> = ({message, time}) => {
-
+const MessageComponent: React.FC<Props> = ({ message, time, sender }) => {
   return (
-    <div className='message-body'>
-        <p>{message}</p>
-        <span>{time}</span> 
+    <div className={`message-container ${sender}`}>
+      <div className='message-bubble'>
+        <p className='message-text'>{message}</p>
+        <span className='message-time'>{time}</span>
+      </div>
     </div>
   )
 }

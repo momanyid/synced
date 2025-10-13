@@ -1,5 +1,53 @@
-.messagebody {
-    background-color: rgb(129, 129, 151);
-    color: white;
+.message-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
+.message-container.user {
+  justify-content: flex-end;
+}
+
+.message-container.other {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 60%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.message-container.user .message-bubble {
+  background-color: #3390ec;
+  color: white;
+}
+
+.message-container.other .message-bubble {
+  background-color: #4a7ba7;
+  color: white;
+}
+
+.message-text {
+  margin: 0;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  align-self: flex-end;
+}
+
+.message-container.user .message-time {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.message-container.other .message-time {
+  color: rgba(255, 255, 255, 0.6);
+}
