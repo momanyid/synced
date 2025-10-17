@@ -14,9 +14,9 @@ const App: React.FC = () => {
       </div>
       <div className="content-section">
         <div className="menu-bar">
-          <img src='src/assets/profile/Iron Man (2).jpg' className='profile-avatar'/>
+          <img src='/assets/profile/Iron Man (2).jpg' className='profile-avatar'/>
           <button className='settings-btn'>
-            <img src='src/assets/profile/settings.svg' className='profile-avatar settings-icon'/>
+            <img src='/assets/profile/settings.svg' className='profile-avatar settings-icon'/>
           </button>
         </div>
         <div className="sidebar">
