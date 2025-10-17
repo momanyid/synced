@@ -12,7 +12,7 @@ interface Props {
   onSelect: (id: number) => void
 }
 
-const ChatComponent: React.FC<Props> = ({ 
+const Profile: React.FC<Props> = ({ 
   id, 
   image, 
   profileName, 
@@ -42,4 +42,4 @@ const ChatComponent: React.FC<Props> = ({
   )
 }
 
-export default ChatComponent
+export default Profile

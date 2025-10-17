@@ -10,7 +10,7 @@ interface Props {
 const MessageComponent: React.FC<Props> = ({ message, time, sender }) => {
   return (
     <div className={`message-container ${sender}`}>
-      <div className='message-bubble'>
+      <div className={`message-bubble ${sender === "user"? 'left': 'right'}`}>
         <p className='message-text'>{message}</p>
         <span className='message-time'>{time}</span>
       </div>

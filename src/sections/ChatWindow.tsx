@@ -16,7 +16,7 @@ interface Props {
 // Mock messages for different chats
 const chatMessages: { [key: number]: Message[] } = {
   0: [
-    { id: 1, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
+    { id: 1, message: 'Some text message to be texted hereijvo j oig fjofjoifjfo fbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbojg fjgofd joif joifjoifdjoijfo of oif of j', time: '20:00am', sender: 'other' },
     { id: 2, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
     { id: 3, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
     { id: 4, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
@@ -39,7 +39,7 @@ const chatMessages: { [key: number]: Message[] } = {
   ]
 }
 
-const MessageSection: React.FC<Props> = ({ selectedChat }) => {
+const ChatWindow: React.FC<Props> = ({ selectedChat }) => {
   const messages = chatMessages[selectedChat] || chatMessages[0]
 
   return (
@@ -66,4 +66,4 @@ const MessageSection: React.FC<Props> = ({ selectedChat }) => {
   )
 }
 
-export default MessageSection
+export default ChatWindow

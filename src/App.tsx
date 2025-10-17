@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ProfileSection from './sections/Sidebar'
-import MessageSection from './sections/ChatWindow'
+import Sidebar from './sections/Sidebar'
+import ChatWindow from './sections/ChatWindow'
 import './App.css'
 
 const App: React.FC = () => {
@@ -8,16 +8,25 @@ const App: React.FC = () => {
 
   return (
     <div className='app-body'>
-      <div className="sidebar">
-        {/* <div className="header">
-          <button className="menu-btn">☰</button>
-          <h1 className="app-title">Synced</h1>
-        </div> */}
-        <ProfileSection selectedChat={selectedChat} onSelectChat={setSelectedChat} />
+      <div className="header">
+        <button className="menu-btn">☰</button>
+        <h1 className="app-title">Synced</h1>
       </div>
-      <div className="message-section">
-        <MessageSection selectedChat={selectedChat} />
+      <div className="content-section">
+        <div className="menu-bar">
+          <img src='src/assets/profile/Iron Man (2).jpg' className='profile-avatar'/>
+          <button className='settings-btn'>
+            <img src='src/assets/profile/settings.svg' className='profile-avatar settings-icon'/>
+          </button>
+        </div>
+        <div className="sidebar">
+          <Sidebar selectedChat={selectedChat} onSelectChat={setSelectedChat} />
+        </div>
+        <div className="message-section">
+          <ChatWindow selectedChat={selectedChat} />
+        </div>
       </div>
+      
     </div>
   )
 }

@@ -18,6 +18,7 @@ body {
   height: 100vh;
   background-color: #3390EC;
   display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -29,18 +30,20 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  margin: 2rem 0 0 3rem;
+  margin: 0;
   gap: 20px;
+  border-top-left-radius: 5px;
 }
 
 .header {
+  padding-left: 1rem;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 2rem;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .menu-btn {
@@ -53,7 +56,7 @@ body {
 }
 
 .app-title {
-  display: none;
+  display: block;
 }
 
 .profile-section {
@@ -71,5 +74,40 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 2rem 0.2rem 0 0;
+  margin: 0;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bar {
+  width: 70px;
+  height: 93vh;
+  background-color: #3390EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.settings-icon {
+  background-color:#3390EC;
+  width: 40px;
+  height: 40px;
+}
+
+.settings-btn {
+  background-color: #3390EC;
+  border: none;
 }

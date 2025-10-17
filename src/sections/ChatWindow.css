@@ -1,7 +1,7 @@
 .message-section-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 50px);
   background-color: #000a13;
 }
 
@@ -36,7 +36,6 @@
   gap: 10px;
   padding: 20px;
   background-color: #000a13;
-  /* border-top: 1px solid #0d3b66; */
 }
 
 .message-input {
