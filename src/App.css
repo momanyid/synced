@@ -111,3 +111,8 @@ body {
   background-color: #3390EC;
   border: none;
 }
+
+.right-padding {
+  width: 3px;
+  background-color: #3390EC;
+}

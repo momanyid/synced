@@ -25,6 +25,7 @@ const App: React.FC = () => {
         <div className="message-section">
           <ChatWindow selectedChat={selectedChat} />
         </div>
+        <div className="right-padding"></div>
       </div>
       
     </div>
