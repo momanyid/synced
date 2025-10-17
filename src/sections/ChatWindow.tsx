@@ -1,6 +1,6 @@
 import React from 'react'
 import MessageComponent from '../components/MessageComponent'
-import './MessageSection.css'
+import './ChatWindow.css'
 
 interface Message {
   id: number
@@ -19,7 +19,13 @@ const chatMessages: { [key: number]: Message[] } = {
     { id: 1, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
     { id: 2, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
     { id: 3, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
-    { id: 4, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
+    { id: 4, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
+    { id: 5, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
+    { id: 6, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
+    { id: 1, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
+    { id: 2, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
+    { id: 3, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
+    { id: 4, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
     { id: 5, message: 'Some text message to be texted here', time: '20:00am', sender: 'other' },
     { id: 6, message: 'Some text message to be texted here', time: '20:00am', sender: 'user' },
   ],

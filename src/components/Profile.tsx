@@ -1,5 +1,5 @@
 import React from 'react'
-import './ChatComponent.css'
+import './Profile.css'
 
 interface Props {
   id: number

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ProfileSection from './sections/ProfileSection'
-import MessageSection from './sections/MessageSection'
+import ProfileSection from './sections/Sidebar'
+import MessageSection from './sections/ChatWindow'
 import './App.css'
 
 const App: React.FC = () => {

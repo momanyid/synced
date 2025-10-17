@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchComponent from '../components/SearchComponent'
-import ChatComponent from '../components/ChatComponent'
-import './ProfileSection.css'
+import ChatComponent from '../components/Profile'
+import './Sidebar.css'
 
 interface Profile {
     id: number
