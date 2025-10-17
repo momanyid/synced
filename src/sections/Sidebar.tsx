@@ -18,7 +18,7 @@ const profiles: Profile[] = [
   { id: 3, image: '../src/assets/profile/Iron Man (2).jpg', profileName: 'Mercy', profileMessage: 'Good morning', time: '08:00am', unread: 2 },
   { id: 4, image: '../src/assets/profile/wallpaperflare.com_wallpaper (1).jpg', profileName: 'Arnold', profileMessage: 'Heyyy', time: '08:00am'},
   { id: 5, image: '../src/assets/profile/Iron Man (2).jpg', profileName: 'Linus', profileMessage: 'How is it going', time: '08:00am', unread: 2 },
-  { id: 6, image: '../src/assets/profile/leonardo.jpg', profileName: 'David', profileMessage: 'It went okay iufhoif  id hoidjod ijiojvd dijdoi', time: '08:00am' },
+  { id: 6, image: '../src/assets/profile/leonardo.jpg', profileName: 'David', profileMessage: 'It went okay', time: '08:00am' },
   { id: 7, image: '../src/assets/profile/Iron Man (2).jpg', profileName: 'Joe', profileMessage: 'google.com', time: '08:00am', unread: 2 },
   { id: 8, image: '../src/assets/profile/20240601_171616.jpg', profileName: 'Evans', profileMessage: 'Hello there', time: '08:00am' },
 ]
